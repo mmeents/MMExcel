@@ -1,2 +1,0 @@
-# MMExcel
-Excel C# Wrapper

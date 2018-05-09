@@ -1,8 +1,0 @@
-C:\Reference\Github\MMExcel\MMExcel\bin\Debug\MMExcel.dll
-C:\Reference\Github\MMExcel\MMExcel\bin\Debug\MMExcel.pdb
-C:\Reference\Github\MMExcel\MMExcel\obj\Debug\MMExcel.csproj.CoreCompileInputs.cache
-C:\Reference\Github\MMExcel\MMExcel\obj\Debug\MMExcel.dll
-C:\Reference\Github\MMExcel\MMExcel\obj\Debug\MMExcel.pdb
-C:\Reference\Github\MMExcel\MMExcel\obj\Debug\MMExcel.csproj.ResolveComReference.cache
-C:\Reference\Github\MMExcel\MMExcel\bin\Debug\C0DEC0RE.dll
-C:\Reference\Github\MMExcel\MMExcel\bin\Debug\C0DEC0RE.pdb
