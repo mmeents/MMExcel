@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMExcel", "MMExcel.csproj", "{58B3DE34-160B-463E-B6D7-32A52667CC77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentTester", "..\ComponentTester\ComponentTester.csproj", "{F902DC99-0785-451F-A4F3-15438C86E786}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58B3DE34-160B-463E-B6D7-32A52667CC77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58B3DE34-160B-463E-B6D7-32A52667CC77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58B3DE34-160B-463E-B6D7-32A52667CC77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58B3DE34-160B-463E-B6D7-32A52667CC77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F902DC99-0785-451F-A4F3-15438C86E786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F902DC99-0785-451F-A4F3-15438C86E786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F902DC99-0785-451F-A4F3-15438C86E786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F902DC99-0785-451F-A4F3-15438C86E786}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CDD6B93-CECF-45D0-B3FC-AC1DFE62E28E}
+	EndGlobalSection
+EndGlobal

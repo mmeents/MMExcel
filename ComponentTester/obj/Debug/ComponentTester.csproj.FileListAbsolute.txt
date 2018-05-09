@@ -1,0 +1,14 @@
+C:\Reference\Github\MMExcel\ComponentTester\bin\Debug\ComponentTester.exe.config
+C:\Reference\Github\MMExcel\ComponentTester\bin\Debug\ComponentTester.exe
+C:\Reference\Github\MMExcel\ComponentTester\bin\Debug\ComponentTester.pdb
+C:\Reference\Github\MMExcel\ComponentTester\bin\Debug\C0DEC0RE.dll
+C:\Reference\Github\MMExcel\ComponentTester\bin\Debug\MMExcel.dll
+C:\Reference\Github\MMExcel\ComponentTester\bin\Debug\MMExcel.pdb
+C:\Reference\Github\MMExcel\ComponentTester\bin\Debug\C0DEC0RE.pdb
+C:\Reference\Github\MMExcel\ComponentTester\obj\Debug\ComponentTester.csprojResolveAssemblyReference.cache
+C:\Reference\Github\MMExcel\ComponentTester\obj\Debug\ComponentTester.Form1.resources
+C:\Reference\Github\MMExcel\ComponentTester\obj\Debug\ComponentTester.Properties.Resources.resources
+C:\Reference\Github\MMExcel\ComponentTester\obj\Debug\ComponentTester.csproj.GenerateResource.Cache
+C:\Reference\Github\MMExcel\ComponentTester\obj\Debug\ComponentTester.csproj.CoreCompileInputs.cache
+C:\Reference\Github\MMExcel\ComponentTester\obj\Debug\ComponentTester.exe
+C:\Reference\Github\MMExcel\ComponentTester\obj\Debug\ComponentTester.pdb
