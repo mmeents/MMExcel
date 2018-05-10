@@ -40,6 +40,9 @@ namespace MMExcel {
     public MMRng AlignMiddle(){ Rng.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter; return this; }
     public MMRng AlignBottom(){ Rng.VerticalAlignment = Excel.XlVAlign.xlVAlignBottom; return this; }
 
+    public MMRng Merge(){ Rng.Merge(false); return this; }
+
+
     public void AddPicture(string sFileName){ 
         MMRng rCell = Owner[CellA, CellB];
         float Left = (float)((double)rCell.Rng.Left +3);
