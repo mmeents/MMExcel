@@ -44,13 +44,14 @@ namespace MMExcel {
 
     public MMRng Merge(){ Rng.Merge(false); return this; }
 
+    public MMRng SetRowHeight(double dInchHeight){ Rng.RowHeight = dInchHeight.toPointsVertical(); return this; }
+    public MMRng SetColumnWidths(double dInchWidth){ Rng.ColumnWidth = dInchWidth.toPointsHorizontal(); return this; }
     public MMRng SetBorders(Color BorderColor, Excel.XlBorderWeight aWeight, Excel.XlLineStyle aLineStyle){ 
       Rng.Borders.Color = ColorTranslator.ToOle(BorderColor);
       Rng.Borders.Weight = aWeight;
       Rng.Borders.LineStyle = aLineStyle;
       return this;
     }
-
     public MMRng SetFill(Excel.XlPattern aFillPattern, double aFillAngleDegree, Color aStartColor, Color aEndColor){ 
       Rng.Interior.Pattern = aFillPattern;
       Excel.LinearGradient localG = Rng.Interior.Gradient;
