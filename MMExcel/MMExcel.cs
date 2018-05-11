@@ -23,7 +23,9 @@ namespace MMExcel {
     }
     public Int32 iRow {get { return Rng.Row;} }
     public Int32 iCol {get { return Rng.Column;} }
+
     public string Text {get {return (string)Rng.Text;} set { Owner.WS.Cells[ iRow, iCol] = value; } } 
+
     public double Width {get {return Rng.Columns.EntireColumn.Width; } set{ Rng.Columns.EntireColumn.ColumnWidth = value; }}
     public double ColumnWidth { get { return Rng.ColumnWidth; } set { Rng.ColumnWidth = value; } }
     public double RowHeight { get { return Rng.RowHeight;} set{ Rng.RowHeight = value;} }
@@ -31,7 +33,7 @@ namespace MMExcel {
     public string FontName { get{ return Rng.Font.Name;} set { Rng.Font.Name = value; } }
     public dynamic FontSize { get { return Rng.Font.Size; } set { Rng.Font.Size = value; } }
     public Color FontColor { get{ return ColorTranslator.FromOle( Rng.Font.Color);} set { Rng.Font.Color = ColorTranslator.ToOle(value); } }
-
+    
     public MMRng AlignLeft(){ Rng.HorizontalAlignment = Excel.XlHAlign.xlHAlignLeft; return this; }
     public MMRng AlignCenter(){ Rng.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter; return this;}
     public MMRng AlignRight(){ Rng.HorizontalAlignment = Excel.XlHAlign.xlHAlignRight; return this;}    
@@ -42,14 +44,35 @@ namespace MMExcel {
 
     public MMRng Merge(){ Rng.Merge(false); return this; }
 
+    public MMRng SetBorders(Color BorderColor, Excel.XlBorderWeight aWeight, Excel.XlLineStyle aLineStyle){ 
+      Rng.Borders.Color = ColorTranslator.ToOle(BorderColor);
+      Rng.Borders.Weight = aWeight;
+      Rng.Borders.LineStyle = aLineStyle;
+      return this;
+    }
 
-    public void AddPicture(string sFileName){ 
-        MMRng rCell = Owner[CellA, CellB];
-        float Left = (float)((double)rCell.Rng.Left +3);
-        float Top = (float)((double)rCell.Rng.Top+3);
-        float Width = Convert.ToSingle(rCell.Rng.Width-6);
-        float Height = Convert.ToSingle(rCell.Rng.Height-6);
-      Owner.AddPicture(sFileName, Left, Top, Width, Height);
+    public MMRng SetFill(Excel.XlPattern aFillPattern, double aFillAngleDegree, Color aStartColor, Color aEndColor){ 
+      Rng.Interior.Pattern = aFillPattern;
+      Excel.LinearGradient localG = Rng.Interior.Gradient;
+      localG.Degree = aFillAngleDegree;
+      localG.ColorStops.Add(0.001).Color = ColorTranslator.ToOle( aStartColor );
+      localG.ColorStops.Add(0.999).Color = ColorTranslator.ToOle( aEndColor );
+      return this;
+    }
+    public MMRng SetFont(string FontName, double FontSize, Color aFontColor){ 
+      Rng.Font.Name = FontName;
+      Rng.Font.Size = FontSize;
+      Rng.Font.Color = ColorTranslator.ToOle(aFontColor);
+      return this;
+    }
+
+    public MMRng AddPicture(string sFileName){       
+        float Left = (float)((double)Rng.Left +3);
+        float Top = (float)((double)Rng.Top+3);
+        float Width = Convert.ToSingle(Rng.Width-6);
+        float Height = Convert.ToSingle(Rng.Height-6);
+        Owner.AddPicture(sFileName, Left, Top, Width, Height);
+      return this;
     }
   }
 
